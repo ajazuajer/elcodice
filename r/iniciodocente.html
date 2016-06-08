@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Verificación del Docente</title>
+<link rel="stylesheet" type="text/css" href="estilo.css" />
+</head>
+<body>
+  <h1>Identificaci&oacuten del Docente</h1>
+	<form action="../php/docente.php" method="post">
+		<table>
+			<tr>
+			<td>
+		C&eacutedula:</td>
+			<td><input type="text" name="cedula" placeholder="12345678" />
+				</td>
+			</tr><tr><td>
+		Nombre:</td>
+			<td><input type="text" name="nombre"  placeholder="Nombre"/>
+				</td>
+			</tr><tr><td>
+		Apellido:</td>
+			<td><input type="text" name="apellido"  placeholder="Apellido"/>
+				</td>
+			</tr><tr><td>
+		Contrase&ntildea:</td>
+			<td><input type="password" name="clave"  placeholder="********"/>
+				</td>
+			</tr></table>
+		<input type="submit" value="Entrar" />
+		<input type="reset" name="reset" value="Limpiar" />
+		</form>
+</body>
+</html>

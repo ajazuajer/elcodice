@@ -1,0 +1,431 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//ES" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Analisis y Diseño de Algoritmos</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="Place your description here" />
+<meta name="keywords" content="put, your, keyword, here" />
+<meta name="author" content="Templates.com - website templates provider" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script src="js/cufon-yui.js" type="text/javascript"></script>
+<script src="js/cufon-replace.js" type="text/javascript"></script>
+<script src="js/AvantGarde_Bk_BT_400.font.js" type="text/javascript"></script>
+<script src="js/Myriad_Pro_300.font.js" type="text/javascript"></script>
+<script src="js/jcarousellite.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+	$(document).ready(function(){
+	  $("a.new_window").attr("target", "_blank");
+	  
+	  //carousel
+	  $(".carousel").jCarouselLite({
+		  btnNext: ".next",
+		  btnPrev: ".prev"
+	  });
+	});
+		
+</script>
+<!--[if lt IE 7]>
+<script type="text/javascript" src="js/ie_png.js"></script>
+<script type="text/javascript">
+	ie_png.fix('.png, .carousel-box .next img, .carousel-box .prev img');
+</script>
+<link href="ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+</head>
+<body id="page3">
+<div class="tail-top-left"></div>
+<div class="tail-top">
+<!-- header -->
+	<div id="header">
+		<div class="row-1">
+			<div class="fright">
+				<ul>
+					<li><a href="index.html" class="active">Volver</a></li>
+				</ul>
+			</div>
+		</div>
+    </div>
+<!-- content -->
+	<div id="content">
+		<div class="row-1">
+			<div class="inside">
+				<div class="container">
+					<div class="aside">
+                        <h3>Temario</h3>
+                        <ul>
+                            <div><li>
+                                <img src="images/pic1.gif" alt="" />
+                                <div class="extra-wrap"><span>Unidad I</span><a href="unidad1.1.html">-Definición de conceptos básicos.</a></div>
+                          </li></div>
+                            <div><li>
+                                <img src="images/pic2.gif" alt="" />
+                                <div class="extra-wrap">
+                                  <div><span>Unidad 2</span><a href="unidad2.1.html">-Comprendiendo los Algoritmos.</a></div></div>
+                            </li></div><div>
+                            <li>
+                                <img src="images/pic3.gif" alt="" />
+                                <div class="extra-wrap"><span>Unidad 3</span><div><a href="unidad3.1.html">-Utilizar Estructuras de Control.</a><br><a href="unidad3.2.html">-Arreglos y Matrices.</a></div></div>
+                          </li></div>
+                          <div>
+                            <li>
+                                <img src="images/pic4.gif" alt="" />
+                                <div class="extra-wrap"><articulo><span>Unidad 4</span><div><a href="unidad4.1.html">-Estrategias de Diseño de Algoritmos</a></div></div>
+                          </li></div>
+                          <div>
+                            <li>
+                                <img src="images/pic5.gif" alt="" />
+                                <div class="extra-wrap"><articulo>
+                                <span>Unidad 5</span>
+                                <div><a href="unidad5.1.html">-Métodos de representación de los Algoritmos.</a></div></div>
+                          </li></div><div>
+                        </ul>
+                    </div>
+					<div class="content">
+                        <h3>Estructuras de Control</h3>
+                        <div class="img-box1"><b class="txt2"><br>
+                            <h2>Recursividad</h2>
+                            <p>La recursiva es aquella en la que el objeto que se define forma parte de la definición (recuerde la regla gramatical: lo definido nunca debe formar parte de la definición). La característica importante de la recursividad es que siempre existe un medio de salir de la definición, mediante la cual se termina el proceso recursivo.</p>
+                            <p><img src="images/recursividad1.png" alt="" width="550" height="250" /></p><br>
+                            <p>Resumiendo, un algoritmo es recursivo si se llama a sí mismo para hacer parte del trabajo. Para que este enfoque sea exitoso, la llamada debe ser en un problema menor que al originalmente intentado.</p>
+                            <p>En general, un algoritmo recursivo tiene dos partes:</p>
+                            <p><img src="images/recursividad2.png" alt="" width="550" height="250" /></p><br>
+                            <p>Ejemplos de aplicación: cálculo del factorial, torres de Hanoi y función de Ackermann.</p>
+                            <p>Resolución del ejercicio de cálculo del factorial: Realizar un algoritmo que permita calcular el factorial de un número.
+                                <ul>
+                                    <li>1. Inicio</li>
+                                    <li>2. Leer N</li>
+                                    <li>3. P=1</li>
+                                    <li>4. Si N>1 Entonces</li>
+                                    <li>   4.1. P = P * N</li>
+                                    <li>   4.2. N = N – 1</li>
+                                    <li>5. Mostrar P</li>
+                                    <li>6. Fin</li>
+                                </ul>
+                            </p><br>
+                            <h2>Factoriales</h2>
+                            <p>La notación n! se define para los enteros n ≥ 0 como:
+                                <ul>
+                                    <li>n! = 1 ; n·(n-1)!</li>
+                                    <li>si n=0 ; si n>0</li>
+                                    <li>Entonces, n!=1·2·3·4 ··· n</li>
+                                </ul>
+                            </p>
+                            <p>Una cota superior débil de la función factorial es n! ≤ n n , pues cada uno de los n términos en el producto factorial es a lo más n. La aproximación de Stirling, proporciona una cota superior ajustada, y también una cota inferior:
+                                <ul>
+                                    <li>n! = sqrt{2pn} (n/e) n (1 + Q(1/n))</li>
+                                    <li>donde e es la base del logaritmo natural.</li>
+                                    <li>Usando la aproximación de Stirling, podemos demostrar que:</li>
+                                    <li>n! = o(n n )</li>
+                                    <li>n! = (2 n )</li>
+                                    <li>lg(n!) = Q(n lg n)</li>
+                                </ul>
+                            </p><br>
+                            <h2>Numeros de Fibonacci</h2>
+                            <p>Los números de Fibonacci se recurrencia:
+                                <ul>
+                                    <li>F 0 = 0</li>
+                                    <li>F 1 = 1</li>
+                                    <li>F i = F i-1 + F i-2 para i ≥ 2</li>
+                                </ul>
+                            </p>
+                            <p>Entonces cada número de Fibonacci es la suma de los números previos, produciendo la sucesión: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, ...</p><br>
+                            <h2>Sumatorias y recurrencias</h2>
+                            <p>Las sumatorias se usan mucho para el análisis de la complejidad de programas, en especial de ciclos, ya que realizan conteos de operaciones cada vez que se entra al ciclo.</p>
+                            <p>Cuando se conoce una ecuación que calcula el resultado de una sumatoria, se dice que esta ecuación representa una solución en forma cerrada. Ejemplos de soluciones en forma cerrada:
+                                <ul>
+                                    <li>Σ i = n(n+1)/2</li>
+                                    <li>Σ I 2 = (2n 3 +3n 2 + n)/6</li>
+                                    <li>Σ 1 log n n = n log n</li>
+                                    <li>Σ ∞ a i = 1/(1-a)</li>
+                                </ul>
+                            </p>
+                            <p>El tiempo de ejecución para un algoritmo recursivo está más fácilmente expresado por una expresión recursiva. Una relación de recurrencia define una función mediante una expresión que incluye una o más instancias (más pequeñas) de sí misma.</p>
+                            <p>Por ejemplo: n! = (n-1)! n , 1! = 0! = 1</p>
+                            <p>La secuencia de Fibonacci:
+                                <ul>
+                                    <li>Fib(n)=Fib(n-1)+Fib(n-2) +Fib(n-3)...</li>
+                                    <li>Fib(5)=Fib(4)+ Fib(3)+ Fib(2)=9</li>
+                                    <li>Fib(5)=4+3+2=9</li>
+                                </ul>
+                            </p>
+                            <p>Nosotros sabemos que:
+                                <ul>
+                                    <li>- Un número es positivo cuando es mayor de cero y negativo cuando es menor de cero.</li>
+                                </ul>
+                            </p><br>
+                            <h2>Elementos de un Programa</h2>
+                            <p>Los lenguajes de programación se componen de elementos básicos, los cuales se usan como bloques constructivos; también existen reglas que harán uso de la combinación de estos elementos. A estas reglas les llamamos la Sintaxis del lenguaje, sólo las instrucciones que contienen una sintaxis correcta pueden ser interpretadas por la computadora y los programas que contengan errores de sintaxis son rechazados por esta misma.</p>
+                            <p>Los elementos que constituyen un programa o algoritmo son:
+                                <ul>
+                                    <li>Palabras reservadas (inicio, fin, si-entonces, etc.)</li>
+                                    <li>Identificadores (nombres de variables, esencialmente)</li>
+                                    <li>Caracteres especiales (coma, apóstrofe, etc.)</li>
+                                    <li>Constantes</li>
+                                    <li>Variables</li>
+                                    <li>Expresiones</li>
+                                    <li>Instrucciones</li>
+                                </ul>
+                            </p>
+                            <p>Un programa debe contener un conjunto de especificaciones que deben ser establecidas por el programador, estas son: entrada, salida y algoritmos de resolución que tendrán las técnicas para obtener las salidas a partir de las entradas. El algoritmo solución, es en realidad el conjunto de códigos que transforman las entradas del programa (datos), en salidas (resultados).</p> 
+                            <p>Las entradas al programa deben ser establecidas por el programador. Las entradas se darán por medio de un dispositivo de entrada, puede ser teclado, disco, teléfono, etc., a este proceso se le conoce como entrada de datos, operación de lectura o acción de leer.</p> 
+                            <p>Las salidas de datos se presentan en dispositivos periféricos de salida, puede ser pantalla, impresora, discos, etc. La operación de salida de datos se conoce también como escritura o acción de escribir.</p>
+                            <p>Instrucciones</p>
+                            <p>El diseño del algoritmo y luego la codificación de programas consiste en la definición de acciones o instrucciones que van a dar solución al problema que se está tratando. Luego de escribirse las acciones o instrucciones, se deberá ir al proceso de almacenamiento en la memoria conservando el orden lógico para su posterior ejecución; es decir en secuencia. Un programa puede ser lineal o no lineal. Un programa es lineal cuando las instrucciones siguen una secuencia, sin bifurcaciones, decisión ni comparaciones. Cuando el programa es no lineal, significa que la secuencia es interrumpida mediante instrucciones de bifurcación.</p>
+                            <p>De acuerdo al tipo de lenguaje de programación en que se trabaja las instrucciones van a ser diferentes. Pero las instrucciones básicas son independientes del lenguaje. Las instrucciones básicas pueden clasificarse de la siguiente forma:
+                                <ul>
+                                    <li>Instrucción de inicio/fin</li>
+                                    <li>Instrucción de asignación</li>
+                                    <li>Instrucción de lectura</li>
+                                    <li>Instrucción de escritura</li>
+                                    <li>Instrucción de bifurcación</li>
+                                    <li>Instrucciones de repetición o ciclos</li>
+                                </ul>
+                            </p>
+                            <p>Hay otros elementos que también son básicos y forman parte de los programas. Son de mucha importancia la comprensión y el funcionamiento, porque gracias a ellos se llegará a un correcto diseño del algoritmo. Estos son: 
+                                <ul>
+                                    <li>Bucles</li>
+                                    <li>Contadores</li>
+                                    <li>Acumuladores</li>
+                                    <li>Interruptores</li>
+                                    <li>Estructuras:</li>
+                                    <li>-Secuenciales</li>
+                                    <li>-Selectivas</li>
+                                    <li>-Repetitivas</li>
+                                </ul>
+                                </p><br>
+                            <h2>Bucles</h2>
+                            <p>Los bucles son elementos que tiene instrucciones que se repiten un cierto número de veces, mientras una condición es cumplida; se conoce como lazo (loop). La condición es un mecanismo que determina las tareas repetitivas el cual debe ser establecido por el programador, éste puede ser verdadero o falso y se comprueba una vez a cada paso o iteración del bucle.</p>
+                            <p>Un bucle está compuesto de tres partes:
+                            <ul>
+                                    <li>1. Decisión</li>
+                                    <li>2. Cuerpo del bucle</li>
+                                    <li>3. Salida del bucle</li>
+                                </ul>
+                            </p>
+                            <p>La forma como se disponen los bucles también lleva un nombre, de allí que pueden ser anidados o independientes. Los que son anidados son cuando se encuentran uno contenido en otro, y los independientes son los que se encuentran libres, sin la influencia de otro.</p><br>
+                            <h2>¿Qué es un contador?</h2>
+                            <p>La programación permite automatizar procedimientos manuales, en ocasiones, es posible llevar cuentas en un mismo programa y que al final nos muestre los resultados de éstas. Es aquí donde interviene el contador, el cual es, una variable que se incrementa o decremento en una cantidad constante y que contiene el resultado de una cuenta. Se implementa a modo de ecuación: cont = cont + 1</p>
+                            <p>Ejemplo: Realizar un algoritmo que permita leer N números y mostrar el mayor.
+                                <ul>
+                                    <li>1. Inicio</li>
+                                    <li>2. Mayor=0</li>
+                                    <li>3. Contador=1</li>
+                                    <li>4. Leer N</li>
+                                    <li>5. Leer Numero</li>
+                                    <li>6. Si Numero>Mayor entonces</li>
+                                    <li>   6.1. Mayor=Numero</li>
+                                    <li>   6.2. Contador = Contador + 1</li>
+                                    <li>7. Si Contador < N Entonces</li>
+                                    <li>   7.1. Mostrar Mayor</li>
+                                    <li>8. Fin</li>
+                                </ul>
+                            </p><br>
+                            <h2>¿Qué es un Acumulador?</h2>
+                            <p>El acumulador es una variable que suma sobre sí misma un conjunto de valores para de esta manera tener la suma de todos ellos en una sola variable, es decir, actúa como totalizador, almacenando cantidades variables que resulten de sumas sucesivas. Se implementa a modo de ecuación: acum = acum + var</p>
+                            <p>Ejemplo: Realizar un algoritmo que permita leer 5 números y mostrar la suma de estos.
+                                <ul>
+                                    <li>1. Inicio</li>
+                                    <li>2. Suma=0</li>
+                                    <li>3. Leer Total</li>
+                                    <li>4. cont=0</li>
+                                    <li>5. Repetir hasta que cont=5</li>
+                                    <li>   4.1. Leer Num</li>
+                                    <li>   4.2. cont=cont+1</li>
+                                    <li>5. Hasta que cont=5</li>
+                                    <li>6. Mostrar Suma</li>
+                                    <li>7. Fin</li>
+                                </ul>
+                            </p>
+                            <p>La diferencia entre el acumulador y el contador es que mientras el primero aumenta un número constante, el otro va aumentando en una cantidad variable.</p><br>
+                            <h2>Estructuras Selectivas:</h2>
+                            <p>Este tipo de estructura es usada cuando el programador quiere dar dos o más caminos como alternativa en un algoritmo a seguir, según los parámetros especificados. Una instrucción de decisión evalúa una condición y, en función del resultado, se bifurcará el algoritmo a un determinado punto.</p>
+                            <p>Es de gran utilidad la especificación formal de los algoritmos, para cuando éste requiera una descripción más complicada que una lista sencilla de instrucciones. Este es el caso cuando existe un número de posibles alternativas que resulten de la evaluación de una determinada condición. Este tipo de estructuras son utilizadas para tomar decisiones lógicas, llamándose por esta razón estructuras de decisión o alternativas. En esta estructura es evaluada una condición y de acuerdo al resultado el algoritmo opta por una de las alternativas. Las condiciones son especificadas utilizando expresiones lógicas.</p>
+                            <p>En ocasiones es necesario evaluar una entrada o un resultado. En un algoritmo se evalúan condiciones para ejecutar un grupo de instrucciones a cambio de otro grupo.</p>
+                            <p><img src="images/op-r.png" alt="" width="250" height="60" /></p><br>
+                            <p>Estas condiciones se dan a modo de comparaciones entre dos elementos, utilizando operadores relacionales.</p>
+                            <p><img src="images/op-l.png" alt="" width="300" height="90" /></p><br>                  
+                            <p>Además se tienen operadores lógicos, los cuales se utilizan para realizar más de una comparación.</p><br>
+                            <p>Para representar una estructura selectiva se hace uso de palabras en pseudocódigo. Las estructuras selectivas o alternativas pueden ser:
+                                <ul>
+                                    <li>- Simples</li>
+                                    <li>- Dobles</li>
+                                    <li>- Multiples</li>
+                                </ul>
+                            </p>
+                            <h2>Estructura SI (if)</h2>
+                            <p>La estructura alternativa simple si-entonces (en inglés if-then) lleva a cabo una acción al cumplirse una determinada condición. La selección si-entonces evalúa la condición y - si la condición es verdadera, ejecuta la acción SI - si la condición es falsa, no ejecuta nada.</p>
+                            <p>Existen limitaciones en la estructura anterior, y se necesitará normalmente una estructura que permita elegir dos opciones o alternativas posibles, de acuerdo al cumplimiento o no de una determinada condición, por lo cual es posible utilizar la alternativa doble (si-entonces-sino/if-then-else).</p>
+                            <p>La sintaxis general es:
+                                <ul>
+                                    <li>Si condición Entonces</li>
+                                    <li>----Instrucciones_V</li>
+                                    <li>SiNo</li>
+                                    <li>----Instrucciones_F</li>
+                                    <li>FinSi</li>
+                                </ul>
+                            </p>
+                            <p>Ejemplo:</p>
+                            <p><img src="images/si2.png" alt="" width="550" height="250" /></p><br>
+                            <p>Estructura Segun (case)</p>
+                            <p>Generalmente es necesario que existan más de dos alternativas de las cuales poder elegir. Esta opción podría solucionar problemas que requieren de decisiones no usuales, por estructuras alternativas simples o dobles, anidadas o en cascada. Sin embargo, se pueden plantear serios problemas de escritura del algoritmo y naturalmente de legibilidad, si el número de alternativas es grande.</p>
+                            <p>La sintaxis general es:
+                                <ul>
+                                    <li>Según variable</li>
+                                    <li>----Caso valor1</li>
+                                    <li>--------instrucciones</li>
+                                    <li>----Caso valor2</li>
+                                    <li>--------instrucciones</li>
+                                    <li>FinSegun</li>
+                                </ul>
+                            </p>
+                            <p>Ejemplo:</p>
+                            <p><img src="images/si3.png" alt="" width="550" height="250" /></p><br>
+                            <h2>Estructuras Iterativas</h2>
+                            <p>Las estructuras que repiten una secuencia de instrucciones un número determinado de veces se denominan bucles y, al hecho de repetir la ejecución de una secuencia de acciones se denomina iteración.</p>
+                            <p>Las estructuras iterativas son, en la mayoria de los lenguajes de programacion las siguientes:
+                                <ul>
+                                    <li>Bucle Mientras</li>
+                                    <li>Bucle Repetir</li>
+                                    <li>Bucle Desde/Hasta</li>
+                                </ul>
+                            </p>
+                            <p><img src="images/estrucdecontrol.png" alt="" width="550" height="250" /></p><br>
+                            <h2>Bucle Mientras</h2>
+                            <p>Es en la que el cuerpo del bucle se repite en tanto se da una determinada condición. Los ciclos son estructuras de control que permiten ejecutar varias veces una operación.</p>
+                            <p>Este ciclo se repite mientras se cumpla una cierta condición. Las palabras clave "mientras" y "hacer" señalan que se trata de un ciclo mientras. La condición se verifica antes de ejecutar la operación, de manera que, cada vez que la condición sea verdadera se hace un bucle (una repetición).</p>
+                            <p>Sintaxis:
+                                <ul>
+                                    <li>Mientras condicion Hacer</li>
+                                    <li>----Instrucciones del Bucle</li>
+                                    <li>----Invalidación de la condición</li>
+                                    <li>FinMientras</li>
+                                </ul>
+                            </p>
+                            <p>Ejemplo:</p>
+                            <p><img src="images/mientras1.png" alt="" width="550" height="250" /></p><br>
+                            <h2>Bucle Repetir</h2>
+                            <p>Generalmente se quiere que un bucle se ejecute, mínimo una vez, antes de que la condición de repetición sea cumplida o se compruebe. En la estructura mientras, si la condición es falsa, no se dará ninguna ejecución. Esta estructura se ejecutará mientras se cumpla una condición determinada, la cual es comprobada al final del bucle.</p>
+                            <p>En este ciclo se ejecuta una operación hasta que se cumpla una condición. Ahora se ejecuta primero la operación y se verifica la condición después.</p>
+                                <p>Sintaxis:
+                                <ul>
+                                    <li>Repetir</li>
+                                    <li>----Instrucciones del Bucle</li>
+                                    <li>Hasta que condición</li>
+                                </ul>
+                            </p>
+                            <p>Ejemplo:</p>
+                            <p><img src="images/repetir1.png" alt="" width="550" height="250" /></p><br>              
+                            <h2>Bucle Desde/Hasta</h2>
+                            <p>Muchas veces ya se conoce el número de veces que se deben ejecutar las acciones de un bucle. Pero cuando se quiere que el número de iteraciones sea un número determinado, los programadores utilizan un tipo de estructura desde o para (for, en inglés).</p>
+                                <p>Sintaxis:
+                                <ul>
+                                    <li>Para variable=valor_inicial Hasta variable=valor_final</li>
+                                    <li>----Instrucciones del Bucle</li>
+                                    <li>FinPara</li>
+                                </ul>
+                            </p>
+                            <p>Ejemplo:</p>
+                            <p><img src="images/para1.png" alt="" width="550" height="250" /></p><br>
+                        </div>                  
+                    </div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<div class="tail-middle">
+			<div class="row-2">
+				<div class="inside">
+					<h3>Descargas</h3>
+					<div class="carousel-box">
+						<div class="prev"><a href="#"><img src="images/prev.png" alt="" /></a></div>
+						<div class="next"><a href="#"><img src="images/next.png" alt="" /></a></div>
+						<div class="carousel">
+							<ul>
+								<li>
+									<div class="box">
+										<div class="border-top">
+											<div class="border-bot">
+												<div class="left-top-corner">
+													<div class="right-top-corner">
+														<div class="right-bot-corner">
+															<div class="left-bot-corner">
+																<div class="img-box2"><a href="https://mega.nz/#!zxYU3TzI!5HRw79qCplnNcKVcSQXVS5HJHkpjkDzeqhtaTqckvI4" target="new"><img src="images/slide-img1.jpg" alt="" /></a>
+																		<div class="inner"><a href="https://mega.nz/#!zxYU3TzI!5HRw79qCplnNcKVcSQXVS5HJHkpjkDzeqhtaTqckvI4" target="new">
+																			<h4>Guia de Estudio</h4>
+																			<p>Documento PDF con los contenidos desarrollados para que sean estudiados con facilidad.</p></a>
+																		</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="box">
+										<div class="border-top">
+											<div class="border-bot">
+												<div class="left-top-corner">
+													<div class="right-top-corner">
+														<div class="right-bot-corner">
+															<div class="left-bot-corner">
+																<div class="inner">
+																	<div class="img-box2"><a href="https://mega.nz/#!fpRB0AKC!RD_JpYrIy0DWzsniEs1XckCeYUtpO4YTsmq3jztC_PI" target="new"><img src="images/slide-img2.jpg" alt="" /></a>
+																		<div class="inner"><a href="https://mega.nz/#!fpRB0AKC!RD_JpYrIy0DWzsniEs1XckCeYUtpO4YTsmq3jztC_PI" target="new">
+																			<h4>Ejercicios Resueltos</h4>
+																			<p>Ejecicios explicados detalladamente que favorecen la comprensión.</p></a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="box">
+										<div class="border-top">
+											<div class="border-bot">
+												<div class="left-top-corner">
+													<div class="right-top-corner">
+														<div class="right-bot-corner">
+															<div class="left-bot-corner">
+																<div class="inner">
+																	<div class="img-box2"><a href="https://mega.nz/#!D1gkhYqD!iR7yWeDY4F0MJDn-I13T_Nr31A8eCTkWeVcFGrl2xSg" target="new"><img src="images/slide-img3.jpg" alt="" /></a>
+                                                                        <div class="inner"><a href="https://mega.nz/#!D1gkhYqD!iR7yWeDY4F0MJDn-I13T_Nr31A8eCTkWeVcFGrl2xSg" target="new">
+                                                                            <h4>Ejercicios para Resolver</h4>
+                                                                            <p>Lista de ejercicios base para las evaluaciones.</p></a>
+                                                                        </div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- footer -->
+	<div id="footer">
+		<div class="footer">Derechos Reservados - El Codice
+		</div>
+	</div>
+</div>
+<script type="text/javascript"> Cufon.now(); </script>
+</body>
+</html>

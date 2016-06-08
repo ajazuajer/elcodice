@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+padding:0;
+margin:0;
+font-size:100%;
+font-family:'Segoe UI';
+
+}
+
+/*---- VENTANA ----*/
+
+#ventana1{
+opacity:0;
+pointer-events:none;
+background:rgba(0,0,0,0.7);
+width:100%;
+position:absolute;
+top:0px;
+bottom:0px;
+transition:all ease 0.5s;
+z-index:1;
+}
+
+#ventana1:target{
+opacity:1;
+transition:all ease 0.5s;
+pointer-events:all;
+z-index:2;
+}
+#ventana2{
+opacity:0;
+pointer-events:none;
+background:rgba(0,0,0,0.7);
+width:100%;
+position:absolute;
+top:0px;
+bottom:0px;
+transition:all ease 0.5s;
+z-index:1;
+}
+
+#ventana2:target{
+opacity:1;
+transition:all ease 0.5s;
+pointer-events:all;
+z-index:2;
+}
+#contenido{
+background:#fff;
+border-radius:10px;
+box-shadow:#fff 0px 0px 20px;
+border:2px solid #0094ff;
+width:60%;
+margin:5% auto;
+padding:20px;
+}
+
+#contenido h5{
+font-size:30px;
+color:#0094ff;
+margin-bottom:10px;
+}
+
+#contenido h6{
+font-size:18px;
+color:#0094ff;
+margin-right:10px;
+padding:5px;
+}
+
+#contenido p{
+font-size:20px;
+line-height:30px;
+color:#333;
+width:90%;
+margin:auto;
+padding:10px;
+}
+
+#contenido a{
+background:#FF0000;
+color:#fff;
+position:relative;
+margin-top:10px;
+margin-right:10px;
+padding:5px;
+}
+
+#boton a{
+background:#FF0000;
+color:#fff;
+position:relative;
+margin-top:10px;
+margin-right:10px;
+padding:5px;
+}

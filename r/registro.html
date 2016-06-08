@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<head>
+<link rel="stylesheet" type="text/css" href="estilo.css" />
+<title>Registro de Estudiantes</title>
+
+<script language=""="JavaScript">
+    function conMayusculas(field) {
+            field.value = field.value.toUpperCase()
+}
+</script>
+
+</head>
+
+<body>
+<h1>Registro de Estudiantes</h1>
+
+<form id="form1" name="form1" method="post">
+<table>
+<tr>
+<td>
+Primer Nombre: 
+</td>
+<td>
+<input name="nombre" type="text" id="textarea" placeholder="Nombre" size=25 style="text-transform:uppercase" onChange="conMayusculas(this)" />
+</td>
+</tr>
+<tr>
+<td>
+Primer Apellido: 
+</td>
+<td>
+<input name="apellido" type="text" id="textarea2" placeholder="Apellido" size=25 style="text-transform:uppercase" onChange="conMayusculas(this)" />
+</td>
+</tr>
+<tr>
+<td>
+Cédula: 
+</td>
+<td>
+<input name="cedula" type="text" id="textarea3" placeholder="12345678" size=25 />
+</td>
+</tr>
+<tr>
+<td>
+Correo: 
+</td>
+<td>
+<input name="correo" type="text" id="textarea4"  placeholder="nombre@gmail.com" size=25 />
+</td>
+</tr>
+<tr>
+<td>
+Teléfono: 
+</td>
+<td>
+<input name="telefono" type="text" id="textarea5" placeholder="04121234567" size=25 />
+</td>
+</tr>
+<tr>
+<td>
+Núcleo: 
+</td>
+<td>
+<SELECT NAME="nucleo" SIZE=1> 
+<OPTION VALUE="COL">COL</OPTION>
+</SELECT>
+</td>
+</tr>
+<tr>
+<td>
+Carrera: 
+</td>
+<td>
+<SELECT NAME="carrera" SIZE=1> 
+<OPTION VALUE="Informatica">Informática</OPTION>
+</SELECT>
+</td>
+</tr>
+<tr>
+<td>
+Materia: 
+</td>
+<td>
+<SELECT NAME="materia" SIZE=1> 
+<OPTION VALUE="AyD de Algoritmos">Análisis y Diseño de Algoritmos</OPTION>
+<OPTION VALUE="Programacion I">Programación I</OPTION>
+<OPTION VALUE="Programacion II">Programación II</OPTION> 
+</SELECT> 
+</td>
+</tr>
+<tr>
+<td>
+Sección: 
+</td>
+<td>
+<SELECT NAME="seccion" SIZE=1> 
+<OPTION VALUE="S001">S001</OPTION>
+<OPTION VALUE="S002">S002</OPTION>
+<OPTION VALUE="S003">S003</OPTION> 
+</SELECT> 
+</td>
+</tr>
+<tr>
+<td>
+Periodo: 
+</td>
+<td>
+<SELECT NAME="periodo" SIZE=1> 
+<OPTION VALUE="2015-I">2015-I</OPTION>
+<OPTION VALUE="2015-II">2015-II</OPTION>
+<OPTION VALUE="2016-I">2016-I</OPTION> 
+<OPTION VALUE="2016-II">2016-II</OPTION>
+</SELECT> 
+</td>
+</tr>
+</table>
+
+<input type="submit" name="button" id="button" value="Guardar" onclick="this.form.action = '/php/insertar.php'" />
+<input type="reset" name="reset" value="Limpiar" />
+</form>
+</body>
+</html> 

@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//ES" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Analisis y Diseño de Algoritmos</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="Place your description here" />
+<meta name="keywords" content="put, your, keyword, here" />
+<meta name="author" content="Templates.com - website templates provider" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script src="js/cufon-yui.js" type="text/javascript"></script>
+<script src="js/cufon-replace.js" type="text/javascript"></script>
+<script src="js/AvantGarde_Bk_BT_400.font.js" type="text/javascript"></script>
+<script src="js/Myriad_Pro_300.font.js" type="text/javascript"></script>
+<script src="js/jcarousellite.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+	$(document).ready(function(){
+	  $("a.new_window").attr("target", "_blank");
+	  
+	  //carousel
+	  $(".carousel").jCarouselLite({
+		  btnNext: ".next",
+		  btnPrev: ".prev"
+	  });
+	});
+		
+</script>
+<!--[if lt IE 7]>
+<script type="text/javascript" src="js/ie_png.js"></script>
+<script type="text/javascript">
+	ie_png.fix('.png, .carousel-box .next img, .carousel-box .prev img');
+</script>
+<link href="ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+</head>
+<body id="page3">
+<div class="tail-top-left"></div>
+<div class="tail-top">
+<!-- header -->
+	<div id="header">
+		<div class="row-1">
+			<div class="fright">
+				<ul>
+					<li><a href="index.html" class="active">Volver</a></li>
+				</ul>
+			</div>
+		</div>
+    </div>
+<!-- content -->
+	<div id="content">
+		<div class="row-1">
+			<div class="inside">
+				<div class="container">
+					<div class="aside">
+						<h3>Temario</h3>
+						<ul>
+							<div><li>
+								<img src="images/pic1.gif" alt="" />
+								<div class="extra-wrap"><span>Unidad I</span><a href="unidad1.1.html">-Definición de conceptos básicos.</a></div>
+						  </li></div>
+							<div><li>
+								<img src="images/pic2.gif" alt="" />
+								<div class="extra-wrap">
+								  <div><span>Unidad 2</span><a href="unidad2.1.html">-Comprendiendo los Algoritmos.</a></div></div>
+							</li></div><div>
+							<li>
+                                <img src="images/pic3.gif" alt="" />
+                                <div class="extra-wrap"><span>Unidad 3</span><div><a href="unidad3.1.html">-Utilizar Estructuras de Control.</a><br><a href="unidad3.2.html">-Arreglos y Matrices.</a></div></div>
+                          </li></div>
+                          <div>
+							<li>
+								<img src="images/pic4.gif" alt="" />
+								<div class="extra-wrap"><articulo><span>Unidad 4</span><div><a href="unidad4.1.html">-Estrategias de Diseño de Algoritmos</a></div></div>
+						  </li></div>
+                          <div>
+							<li>
+								<img src="images/pic5.gif" alt="" />
+								<div class="extra-wrap"><articulo>
+								<span>Unidad 5</span>
+								<div><a href="unidad5.1.html">-Métodos de representación de los Algoritmos.</a></div></div>
+						  </li></div><div>
+						</ul>
+					</div>
+					<div class="content">
+						<h3>Arreglos y Matrices</h3>
+						<div class="img-box1"><b class="txt2"><br>
+                            <h2>Arreglos</h2>
+							<p>Un arreglo (también llamado vector) es una estructura de datos, o más técnicamente, un espacio de memoria que permite almacenar una colección de elementos, todos del mismo tipo. Conviene imaginar un arreglo como una secuencia contigua de celdas (espacios de memoria), o casillas, en cada una de las cuales se puede guardar un elemento de la colección. Además, es usual dibujarlo como lo ilustra la figura siguiente:</p>
+                            <p><img src="images/arreglo1.png" alt="" width="400" height="150" /></p>
+							<p>Esta figura representa un arreglo de siete casillas cada una de las cuales se puede utilizar para guardar un dato. La dimensión o tamaño de un arreglo es el número de casillas que lo conforman. Debe ser claro, entonces, que la figura anterior corresponde a un arreglo de dimensión 7. Cada una de las casillas de un arreglo tiene asociado un número que la identifica de manera única. A este número se le llama índice o dirección.</p>
+                            <p>En la figura anterior, debajo de cada casilla, aparece su índice. En lenguajes como C, C++ y java, la primera casilla del arreglo tiene índice 0, la segunda tiene índice 1, la tercera índice 2, y así sucesivamente. Es muy importante tener presente que si el arreglo es de dimensión N, la última casilla tiene índice N-1. Los lenguajes de programación permiten que el programador declare arreglos de cualquier tipo y prácticamente de cualquier tamaño. En el pseudocódigo, un arreglo se declara usando el siguiente formato o plantilla:</p>
+                            <p>NOMBRE : arreglo [N] de TIPO</p>
+                            <p>En este formato aparecen en mayúsculas y entre los caracteres < y > los componentes que el programador debe determinar. Así por ejemplo, si se quiere declarar un arreglo con nombre letras, de dimensión 15 y que pueda almacenar datos de tipo caracter, se debe escribir la siguiente línea. Ejemplo: letras : arreglo [15] de caracter</p>
+                            <p>Si se necesita guardar las ventas diarias de una tienda durante la última semana, se puede declarar el siguiente arreglo:</p>
+                            <p>ventas : arreglo [7] de real</p>
+                            <p>Si se quiere guardar las notas que ha sacado un estudiante en los cinco talleres y en los cinco laboratorios del curso de Programación de Computadores se pueden declarar los siguientes arreglos:</p>
+                            <p>talleres : arreglo [5] de real</p>
+                            <p>laboratorios : arreglo [5] de real</p><br>
+                            <h2>Matrices</h2>
+                            <p><img src="images/matriz1.png" alt="" width="400" height="150" /></p>
+                            <p>Esta figura representa un matriz de tres filas (numeradas verticalmente de 0 a 2) y cuatro columnas (numeradas horizontalmente de 0 a 3). En cada una de las 12 celdas o casillas se puede guardar un dato. La dimensión o tamaño de una matriz es el número filas por el número de columnas. Debe ser claro entonces que la figura anterior es la gráfica de una matriz de dimensión 3x4. La numeración de las filas y las columnas determina que cada una de las casillas de una matriz tiene asociados dos números que la identifican de manera única. A estos números se les llama índice de fila e índice de columna, respectivamente.</p>
+                            <p>En el pseudocódigo, y también en C y C++, las filas y las columnas se numeran desde 0. Los lenguajes como C y C++, permiten que el programador declare matrices de cualquier tipo y prácticamente de cualquier tamaño. En el pseudocódigo, un matriz se declara usando el siguiente formato:</p>
+                            <p>NOMBRE : matriz [N][M] de TIPO</p>
+                            <p>En este formato aparecen en mayúsculas y entre los caracteres < y > los componentes que el programador puede determinar. Así por ejemplo, si se quiere declarar una matriz con nombre mat, de dimensión 5x4 y que pueda almacenar datos de tipo caracter, se debe escribir la siguiente línea. Ejemplo: mat : matriz [5][4] de caracter</p>
+                            <p>Según el formato anterior, el programador debe bautizar la matriz (ponerle un nombre significativo), debe decir cuál es su dimensión, y también debe decir de qué tipo son los elementos que almacenará.</p>
+                            <h2>Implementaciones</h2>
+                            <p>Se tienen estructuras de datos definidas por el usuario que se utilizan generalmente para simplificar ciertas operaciones de programación mediante arrays: pilas y colas.</p>
+                            <p>Las Pilas son estructuras de datos que tienen dos operaciones básicas: push (para insertar un elemento) y pop (para extraer un elemento). Su característica fundamental es que al extraer se obtiene siempre el último elemento que acaba de insertarse. Por esta razón también se conocen como estructuras de datos LIFO (del inglés Last In First Out) que quiere decir: el último en entrar es el primero en salir. Una posible implementación mediante listas enlazadas sería insertando y extrayendo siempre por el principio de la lista.</p>
+                            <p><img src="images/matriz2.png" alt="" width="400" height="150" /></p>
+                            <p>Las pilas se aplican en muchas aplicaciones que utilizamos con frecuencia. Por ejemplo, la gestión de ventanas en Windows (cuando cerramos una ventana siempre recuperamos la que teníamos detrás). Otro ejemplo es la evaluación general de cualquier expresión matemática para evitar tener que calcular el número de variables temporales que hacen falta. Ejemplo: 3+4-(8-2*5)</p>
+                            <p><img src="images/matriz3.png" alt="" width="400" height="150" /></p>
+                            <p>Las ColasTambién llamadas estructuras FIFO (del inglés First In First Out), que quiere decir: el primero que entra es el primero que sale. A diferencia de la pila, esta permite la salida de elementos conforme van entrando a la estructura.</p>
+                            <p>Si se desea sacar un elemento seria en el orden estricto en el que fueron almacenados. En este caso, solo podrá eliminarse en numero 5 pues se encuentra en el índice cero, demostrándose que fue el primero en almacenarse.</p>
+                            <p>Colas simples: Se inserta por un sitio y se saca por otro, en el caso de la cola simple se inserta por el final y se saca por el principio. Para gestionar este tipo de cola hay que recordar siempre cual es el siguiente elemento que se va a leer y cuál es el último elemento que se ha introducido.</p>
+                            <p>Colas circulares: En las colas circulares se considera que después del último elemento se accede de nuevo al primero. De esta forma se reutilizan las posiciones extraídas, el final de la cola es a su vez el principio, creándose un circuito cerrado.</p>
+                            <p>Las aplicaciones de los Arreglos y las Matrices puede verse tambien en los metodos de ordenacion y metodos de busqueda, los cuales "ordenan" los elementos (de acuerdo a un orden); y "buscan" un elemento especificado por el usuario.</p><br>
+                            <p><h2>Los recursos adicionales de esta pagina se encuentran en la guia de estudio.</h2></p>
+                        </div>					
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- footer -->
+	<div id="footer">
+		<div class="footer">Derechos Reservados - El Codice
+		</div>
+	</div>
+</div>
+<script type="text/javascript"> Cufon.now(); </script>
+</body>
+</html>

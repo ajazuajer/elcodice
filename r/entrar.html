@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<link rel="stylesheet" type="text/css" href="estilo.css" />
+<title>Estudiantes Registrados</title>
+</head>
+<body>
+  <h1>Identificación de Estudiantes</h1>
+	<form action="../php/mostrar.php" method="post">
+		<table>
+			<tr>
+			<td>
+			Cédula:
+			</td>
+			<td>
+			<input type="text" name="cedula" placeholder="12345678" />
+			</td>
+			</tr>
+			<tr>
+			<td>
+		Periodo:
+</td>
+			<td>
+		<SELECT NAME="periodo" SIZE=1> 
+		<OPTION VALUE="2014-U">2014-U</OPTION>
+		<OPTION VALUE="2015-I">2015-I</OPTION>
+		<OPTION VALUE="2015-II">2015-II</OPTION>
+		<OPTION VALUE="2016-I">2016-I</OPTION> 
+		<OPTION VALUE="2016-II">2016-II</OPTION>
+		</SELECT>
+		</td>
+</tr>
+<table>
+		<input type="submit" value="Entrar" />
+		</form>
+</body>
+</html>

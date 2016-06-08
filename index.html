@@ -1,0 +1,408 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<link rel="shortcut icon" href="images/favicon.ico">
+    <title>El Codice</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">  
+    <link rel="stylesheet" href="css/estilo.css" type="text/css" media="screen"/>
+     
+    <script src="js/jquery-1.6.3.min.js" type="text/javascript"></script>
+    <script src="js/cufon-yui.js" type="text/javascript"></script>
+    <script src="js/cufon-replace.js" type="text/javascript"></script>
+    <script src="js/NewsGoth_400.font.js" type="text/javascript"></script>
+	<script src="js/NewsGoth_700.font.js" type="text/javascript"></script>
+    <script src="js/NewsGoth_Lt_BT_italic_400.font.js" type="text/javascript"></script>
+    <script src="js/Vegur_400.font.js" type="text/javascript"></script> 
+    <script src="js/FF-cash.js" type="text/javascript"></script>
+    <script src="js/jquery.featureCarousel.js" type="text/javascript"></script>     
+    <script type="text/javascript"> 
+      $(document).ready(function() {
+        $("#carousel").featureCarousel({
+			autoPlay:7000,
+			trackerIndividual:false,
+			trackerSummation:false,
+			topPadding:50,
+			smallFeatureWidth:.9,
+			smallFeatureHeight:.9,
+			sidePadding:0,
+			smallFeatureOffset:0
+		});
+      });
+    </script>
+<script language=""="JavaScript">
+    function conMayusculas(field) {
+            field.value = field.value.toUpperCase()
+}
+</script>
+	<!--[if lt IE 7]>
+    <div style=' clear: both; text-align:center; position: relative;'>
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+        	<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+        </a>
+    </div>
+	<![endif]-->
+    <!--[if lt IE 9]>
+   		<script type="text/javascript" src="js/html5.js"></script>
+        <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+	<![endif]-->
+</head>
+
+                
+<body id="page1">
+
+	<div class="extra">
+    	<!--==============================header=================================-->
+        <header>
+        	<div class="row-top">
+            	<div class="main">
+                	<div class="wrapper">
+                    
+                   	  <!--titulo-->
+                    </div>
+                </div>
+            </div>
+            <div class="menu-row">
+            	<div class="menu-bg">
+                    <div class="main">
+                        <nav class="indent-left">
+                            <ul class="menu wrapper">
+                                <li class="active"><a href="index.html">Inicio</a></li>
+                                <li><a href="contenidos.html">contenidos</a></li>
+                                <li><a href="ide.html">ide</a></li>
+                                <li><a href="aplicaciones.html">aplicaciones</a></li>
+                                <li><a href="contacto.html">contacto</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="row-bot">
+            	<div class="center-shadow">
+                	<div class="carousel-container">
+                      <div id="carousel">
+                        <div class="carousel-feature">
+                          <a href="#"><img class="carousel-image" alt="" src="images/gallery-img1.png"></a>                          
+                        </div>
+                        <div class="carousel-feature">
+                          <a href="#"><img class="carousel-image" alt="" src="images/gallery-img3.png"></a>
+                        </div>
+                        <div class="carousel-feature">
+                          <a href="#"><img class="carousel-image" alt="" src="images/gallery-img2.png"></a>
+                        </div>
+                      </div>
+    				</div>
+                </div>
+            </div>
+        </header>
+        
+        <!--==============================content================================-->
+        
+        <section id="content"><div class="ic"></div> 				<div class="main">            
+                <div class="container_12">
+                <div class="wrapper"> 
+                  
+                  <section id="ventana1">
+		<section id="contenido">
+	<h5>Acceso de Estudiantes</h5>
+    <form id="form1"  action="php/mostrar.php" method="Post">
+	<table>
+		<tr>
+		<td><h6>Cédula:</h6> </td>
+        	<td><h6><input type="text" name="cedula" placeholder="12345678" /></h6></td>
+     		</tr>
+     		<tr>
+        	<td><h6>Periodo:</h6> </td>
+		<td><h6><SELECT NAME="periodo" SIZE=1> 
+		<OPTION VALUE="2014-U">2014-U</OPTION>
+		<OPTION VALUE="2015-I">2015-I</OPTION>
+		<OPTION VALUE="2015-II">2015-II</OPTION>
+		<OPTION VALUE="2016-I">2016-I</OPTION> 
+		<OPTION VALUE="2016-II">2016-II</OPTION>
+		</SELECT></h6></td>	
+		</tr>
+	</table>
+
+<input type="submit" value="Entrar" />
+   </form>
+
+<p>Solo los estudiantes registrados pueden acceder a ver su record de notas.</p>
+<a href="#closed">Cancelar</a>
+
+  		</section>
+	</section>
+    
+    <section id="ventana2">
+		<section id="contenido">
+	<h5>Registro de Estudiantes</h5>
+        <p>Introduzca todos los datos solicitados para registrarse.</p>
+        <form id="form2" name="form1" method="post">
+<table>
+	<tr>
+		<td><h6>Primer Nombre:</h6> </td>
+		<td><h6><input name="nombre" type="text" id="textarea" placeholder="Nombre" size=25 style="text-transform:uppercase" onChange="conMayusculas(this)" /></h6></td>
+     </tr>
+     <tr>
+        <td><h6>Primer Apellido:</h6> </td>
+        <td><h6><input name="apellido" type="text" id="textarea2" placeholder="Apellido" size=25 style="text-transform:uppercase" onChange="conMayusculas(this)" /></h6></td>
+	</tr>
+    <tr>
+    	<td><h6>Cédula:</h6> </td>
+        <td><h6><input name="cedula" type="text" id="textarea3" placeholder="12345678" size=25 /></h6></td>
+	</tr>
+    <tr>
+    	<td><h6>Correo:</h6> </td>
+        <td><h6><input name="correo" type="text" id="textarea4"  placeholder="nombre@gmail.com" size=25 /></h6></td>
+	</tr>
+    <tr>
+    	<td><h6>Teléfono:</h6> </td>
+        <td><h6><input name="telefono" type="text" id="textarea5" placeholder="04121234567" size=25 /></h6></td>
+	</tr>
+    <tr>
+		<td><h6>Núcleo:</h6> </td>
+		<td><h6><SELECT NAME="nucleo" SIZE=1> 
+<OPTION VALUE="Cabimas">Cabimas</OPTION>
+</SELECT></h6></td>
+	</tr>
+    <tr>
+		<td><h6>Carrera:</h6> </td>
+		<td><h6><SELECT NAME="carrera" SIZE=1> 
+<OPTION VALUE="Informatica">Informática</OPTION>
+</SELECT></h6></td>
+	</tr>
+    <tr>
+		<td><h6>Materia:</h6> </td>
+		<td><h6><SELECT NAME="materia" SIZE=1> 
+<OPTION VALUE="AyD de Algoritmos">Análisis y Diseño de Algoritmos</OPTION>
+<OPTION VALUE="Programacion I">Programación I</OPTION>
+<OPTION VALUE="Programacion II">Programación II</OPTION> 
+</SELECT></h6></td>
+	</tr>
+	<tr>
+		<td><h6>Sección:</h6> </td>
+		<td><h6><SELECT NAME="seccion" SIZE=1> 
+<OPTION VALUE="S001">S001</OPTION>
+<OPTION VALUE="S002">S002</OPTION>
+<OPTION VALUE="S003">S003</OPTION> 
+</SELECT></h6></td>
+	</tr>
+	<tr>
+		<td><h6>Periodo:</h6> </td>
+		<td><h6><SELECT NAME="periodo" SIZE=1> 
+<OPTION VALUE="2015-I">2015-I</OPTION>
+<OPTION VALUE="2015-II">2015-II</OPTION>
+<OPTION VALUE="2016-I">2016-I</OPTION> 
+<OPTION VALUE="2016-II">2016-II</OPTION>
+</SELECT></h6></td>
+
+	</tr>
+</table>
+<input type="submit" name="button" id="button" value="Guardar" onclick="this.form.action = 'php/insertar.php'" />
+</form></h6>
+        <p>Se le enviará un correo con la información suministrada.</p>
+        <a href="#closed">Cancelar</a>
+  		</section>
+	</section>        
+                        <article class="grid_8">
+                       	  <h3>Bienvenid@s<em class="text-1 margin-bot">El desarrollo de aplicaciones informáticas es un arte muy valorado por quienes las necesitan, sin embargo, aquellos que deben aprenderlas suelen subestimar e incluso menospreciar el importantisimo aporte que estas herramientas aportan al quehacer diario. Es por ello que me he dedicado a la preparación de este sitio, y aquellos que necesitan orientaciones sobre el diseño de software puedan servirse de el junto a quienes en su preparación académica (que de paso casi nunca termina) necesitan orientaciones pertinentes y asi adquirir los conocimientos necesarios para lograr las habilidades y competencias que son requeridas por los diferentes perfiles academicos en las instituciones de estudios.</em></h3>
+                        	<div class="wrapper p4">
+                            	<article class="grid_4 alpha">
+                                	<div class="wrapper p1">
+                                    	<figure class="img-indent2"><img src="images/programar.png" alt="" width="100" height="100" /></figure>
+                                        <div class="extra-wrap">
+                                        	<div class="indent-top">
+                                            	<h4>comenzando<em>¿Qué es todo esto?</em></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="prev-indent-bot"> Programar no es un proceso mecánico,<br>
+implica algo más que solo escribir códigos.<br>
+Es por ello que lo conveniente antes de <br>
+llegar a ver el todo lo relacionado con un<br>
+lenguaje de programacion en particular<br>
+seria conocer de donde viene todo.<br>
+En esta sección se muestran los <br>
+conceptos y terminología de carácter<br>
+introductorio.</p>
+                                    <a class="link-1" href="uno.html">Conocer más</a>
+                              </article>
+                                <article class="grid_4 omega">
+                                	<div class="wrapper p1">
+                                    	<figure class="img-indent2"><img src="images/page1-img2.png" alt=""  width="100" height="100"/></figure>
+                                        <div class="extra-wrap">
+                                        	<div class="indent-top">
+                                            	<h4>planeacion<em>¿En qué se basa el diseño de aplicaciones?</em></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="prev-indent-bot">Dependiendo del tipo de aplicación que se<br>
+piense desarrollar, se deben conocer los<br>
+modelos desde los cuales esccribiremos<br>
+nuestros código fuente. Ya sea que se opte<br>
+por un lenguaje estructurado o por otro orientado<br>
+a objetos, las opciones parten de las exigencias<br>
+y requerimientos del software. Aquí podrán verse<br>
+los Paradigmas de la Programación.</p>
+                                    <a class="link-1" href="dos.html">Conocer más</a>
+                                </article>
+                          </div>
+                            <div class="wrapper">
+                            	<article class="grid_4 alpha">
+                                	<div class="wrapper p1">
+                                    	<figure class="img-indent2"><img src="images/codigo.png" alt=""  width="100" height="100"/></figure>
+                                        <div class="extra-wrap">
+                                        	<div class="indent-top">
+                                            	<h4>en el lenguaje<em>Instrucciones y Sintaxis</em></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="prev-indent-bot">La escritura del código fuente comienza por familiarizarse con cada lenguaje, sin embargo, es una tarea posterior al análisis del problema. Por lo cual el Análista, apoyandose en alguna herramienta se prepara para conocer la forma correcta en la cual deben escribirse las instrucciones del programa.</p>
+                                    <p><a class="link-1" href="tres.html">Conocer más</a>
+                                    </p>
+                                    <p>&nbsp;</p>
+                            	</article>
+                                <article class="grid_4 omega">
+                                	<div class="wrapper p1">
+                                    	<figure class="img-indent2"><img src="images/4.png" alt=""  width="100" height="100"/></figure>
+                                        <div class="extra-wrap">
+                                        	<div class="indent-top">
+                                            	<h4>Desarrollo<em>Estrategias y Métodos</em></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="prev-indent-bot">Durante el desarrollo del software se deben  tomar<br>
+desiciones, y puesto que el computador hará<br>
+cada una de las instrucciones que le digamos<br>
+debemos escribir en el código sentencias que <br>
+permitan ir por un camino o por otro segun sea<br>
+necesario. En esta sección se podrá ver las<br>
+Estructuras Selectivas e Iterativas. </p>
+                                    <a class="link-1" href="cuatro.html">Conocer más</a>
+                                </article>
+                            </div>
+                        
+                            <div class="wrapper">
+                            	<article class="grid_4 alpha">
+                                	<div class="wrapper p1">
+                                    	<figure class="img-indent2"><img src="images/page1-img3.png" alt=""  width="100" height="100"/></figure>
+                                        <div class="extra-wrap">
+                                        	<div class="indent-top">
+                                            	<h4>implementacion<em>Utilizar lo que diseñamos</em></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="prev-indent-bot">Despúes de todo el trabajo realizado pensando en una interfaz de usuario y en la manera en que todas las instrucciones cumplian en resolver el problema, es hora de utilizar el software en el entorno para el cual se diseñó. En esta sección se puede ver como se genera un ejecutable de la aplicacion desarrollada.</p>
+                                    <a class="link-1" href="cinco.html">Conocer más</a>
+                                </article>
+                                <article class="grid_4 omega">
+                                	<div class="wrapper p1">
+                                    	<figure class="img-indent2"><img src="images/page1-img4.png" alt=""  width="100" height="100"/></figure>
+                                        <div class="extra-wrap">
+                                        	<div class="indent-top">
+                                            	<h4>practicas<em>¿Continuar despúes de todo?</em></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="prev-indent-bot">Ya que todo no se acaba hasta que se acaba,<br>
+conforme se nos plantean retos vamos mejorando.<br>
+Siempre recomiendo la lectura frente a cada<br>
+problema informático para luego comenzar el<br>
+desarrollo de la solución. En este apartado se<br>
+pueden ver los programas que han resultado tanto de mi esfuerzo como el de los estudiantes.                                    </p>
+                                    <a class="link-1" href="seis.html">Conocer más</a>
+                                </article>
+                            </div>
+                        </article>
+                        </article>
+                        
+                        <article class="grid_4">
+                        <div class="wrapper p3">
+                       	  <figure class="img-indent"><a href="#"><img src="images/inicio.png" alt="" width="80" height="180" class="img-border" /></a></figure>
+                                <div class="extra-wrap">
+                                	<span class="text-2">Información</span>
+                                	<h4 class="p1">ESTUDIANTES</h4>
+                                    <div>
+                                    <p class="prev-indent-bot">Con la intención de ofrecer un servicio web integral, los estudiantes aquí pueden obtener información relacionada con su progreso académico.</p>
+                                    <a class="link-1" href="#ventana1">Identificate</a></div>
+                                    <div><span class="text-2">Eres nuev@? <a class="link-1" href="#ventana2">Registrate</a></span>
+                                                                     
+                                    </div>
+                                    
+                              </div>
+                          </div>
+                          <h3>Lo más reciente</h3>
+                            
+                            <div class="wrapper p3">
+                            	<figure class="img-indent"><a href="#"><img src="images/blog.png" alt="" width="42" height="42" class="img-border" /></a></figure>
+                                <div class="extra-wrap">
+                               	  <span class="text-2">Blogger</span>
+                                	<h4 class="p1">blog personal</h4>
+                                    <p class="prev-indent-bot">Una de las herramientas mas populares para compartir información en la web a modo de cronologías...</p>
+                                    <a class="link-1" href="http://alejandroazuaje.blogspot.com/" target="_blank">Conocer más</a>
+                              </div>
+                            </div>
+                            <div class="wrapper p3">
+                            	<figure class="img-indent"><a href="#"><img src="images/youtube.png" alt="" width="42" height="42" class="img-border" /></a></figure>
+                                <div class="extra-wrap">
+                                	<span class="text-2">Canal de Youtube.com</span>
+                                	<h4 class="p1">videos</h4>
+                                    <p class="prev-indent-bot">El conocimiento es algo que no debe concertrarse en una sola persona, por ello, he puesto a disposición de muchos estos videos tutoriales...</p>
+                                    <a class="link-1" href="https://www.youtube.com/channel/UC5y8Y8bYluCQk6yzpndCXVg/feed" target="_blank">Conocer más</a>
+                              </div>
+                            </div>
+                          <div class="wrapper p3">
+                            	<figure class="img-indent"><a href="#"><img src="images/powerpoint.png" alt="" width="42" height="42" class="img-border" /></a></figure>
+                                <div class="extra-wrap">
+                                	<span class="text-2">Diapositivas en PowerPoint</span>
+                               	    <h4 class="p1">presentaciones</h4>
+                                    <p class="prev-indent-bot">Facilitar los contenidos de manera dinámica es un reto para todos los docentes. Aqui pueden verse las presentaciones realizadas para mis estudiantes...</p>
+                                    <a class="link-1" href="http://1drv.ms/1xqCrPX" target="_blank">Conocer más</a>
+                              </div>                            </div>
+                              
+                              <div class="wrapper p3">
+                            	<figure class="img-indent"><a href="#"><img src="images/calendario.png" alt="" width="42" height="42" class="img-border" /></a></figure>
+                                <div class="extra-wrap">
+                                	<span class="text-2">Actividades Programadas</span>
+                               	    <h4 class="p1">Calendario</h4>
+                                    <p class="prev-indent-bot">En este enlace podran verse lo acordado junto a los estudiantes en lo relacionado con las Actividades Académicas.</p>
+                                    <a class="link-1" href="calendario.html" target="_blank">Conocer más</a>
+                              </div>                            </div>
+                              
+                      <div class="wrapper p3">
+                                	<span class="text-2">Chat y Video Conferencia en vivo</span>
+                                	<h4 class="p1">asesorias</h4>                          
+                      <p class="prev-indent-bot">Algunas de las actividades planificadas serán atendidas utilizando esta poderosa herramienta de Google.com</p>      	<a href="https://plus.google.com/hangouts/_?gid=632419311524" target="_blank" style="text-decoration:none;">
+  <img src="https://ssl.gstatic.com/s2/oz/images/stars/hangout/1/gplus-hangout-60x230-normal.png"
+    alt="Start a Hangout"
+    style="border:0;width:230px;height:60px;"/>
+</a>                                
+                          </div>
+                    </article>
+                  </div>
+                </div>
+            </div>
+            <div class="block"></div>
+        </section>
+        
+    </div>
+    <!--==============================footer=================================-->
+    <footer>
+        <div class="padding">
+            <div class="main">
+                <div class="wrapper">                        
+                    <article class="grid_4">
+                        <h4 class="indent-bot">mas del autor en:</h4>
+                        <ul class="list-services border-bot img-indent-bot">
+                            <li><a href="#">Facebook</a></li>
+                            <li><a class="item-1" href="#">Twitter</a></li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript"> Cufon.now(); </script>
+</body>
+</html>

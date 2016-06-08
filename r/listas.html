@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="estilo.css" />
+	<title>Listas de Estudiantes</title>
+</head>
+<body>
+  <h1>Información de la Unidad Curricular</h1>
+	<form action="/php/listas.php" method="post">
+		<table>
+			<tr>
+			<td>
+		Materia:</td>
+			<td><input type="text" name="Materia" placeholder="Programacion II" />
+		</td>
+			</tr><tr>
+		Sección:</td>
+			<td><input type="text" name="Seccion" placeholder="001" />
+		</td>
+			</tr><tr>
+		Periodo:			</td>
+			<td><input type="text" name="Periodo" placeholder="2015-1" />
+		</td>
+			</tr></table>
+		<input type="submit" value="Entrar" />
+		<input type="reset" name="reset" value="Limpiar" />
+		<input type="submit" name="cancelar" value="Cancelar" onclick="this.form.action = '/php/cancelar.php'" />
+	</form>
+	</body>
+</html>

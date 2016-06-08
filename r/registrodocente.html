@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<head>
+<link rel="stylesheet" type="text/css" href="estilo.css" />
+<title>Registro de Docentes</title>
+</head>
+
+<body>
+<h1>Registro de Docentes</h1>
+
+<form id="form1" name="form1" method="post">
+<p>
+Primer Nombre: 
+<input name="nombre" type="text" id="textarea" placeholder="Nombre" size=45 />
+</p>
+<p>
+Primer Apellido: 
+<input name="apellido" type="text" id="textarea2" placeholder="Apellido" size=45 />
+</p>
+<p>
+C&eacutedula: 
+<input name="cedula" type="text" id="textarea3" placeholder="12345678" size=45 />
+</p>
+<p>
+Clave: 
+<input name="clave" type="text" id="textarea4"  placeholder="******" size=45 />
+</p>
+
+<input type="submit" name="button" id="button" value="Guardar" onclick="this.form.action = '/php/insertar2.php'" />
+<input type="reset" name="reset" value="Limpiar" />
+<input type="submit" name="cancelar" value="Cancelar" onclick="this.form.action = '/php/cancelar.php'" />
+</form>
+</body>
+</html> 
